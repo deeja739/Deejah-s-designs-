@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deejah's Designs~</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0e1;
+            color: #3e3e3e;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e3d5c4;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #3e3e3e;
+            font-weight: bold;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        footer {
+            background-color: #e3d5c4;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>Deejah's Designs~</header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="home">
+        <h1>Welcome to Deejah's Designs~</h1>
+        <p>Elegant and timeless designs tailored to perfection.</p>
+    </div>
+    <footer>
+        &copy; 2025 Deejah's Designs~. All rights reserved.
+    </footer>
+</body>
+</html>
+
+
