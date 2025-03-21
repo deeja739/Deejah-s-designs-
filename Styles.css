@@ -1,0 +1,152 @@
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fashion.html">Fashion Design</a></li>
+    <li><a href="digital.html">Digital Fashion</a></li>
+    <li><a href="branding.html">Branding Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>content://com.android.externalstorage.documents/tree/primary%3AFiles::primary:Files/Styles.css./css/Styles.css./Navigation menu
+<header>
+  <h1>Welcome to Deejah's Designs~</h1>
+  <p>Fashion, Digital Art & Branding</p>
+  <a href="fashion.html" class="cta-button">Explore My Work</a>
+</header>
+<section class="fashion-gallery">
+  <div class="dress">
+    <img src="dress1.jpg" alt="Elegant White Dress">
+    <div class="overlay">Custom Embroidery & Lace</div>
+  </div>
+</section>
+<div class="slider">
+  <img src="before.jpg" id="before">
+  <img src="after.jpg" id="after">
+</div>
+<input type="range" id="slider" min="0" max="100">
+General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7d6b6b;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #b69b7c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #9c8468;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.service-box h3 {
+    color: #7d6b6b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    margin-top: 30px;
+}
+ {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+header {
+  background: beige;
+  text-align: center;
+  padding: 50px;
+}
+.cta-button {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.fashion-gallery .dress {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.dress:hover .overlay {
+  opacity: 1;
+}
+const slider = document.getElementById('slider');
+const afterImage = document.getElementById('after');
+
+slider.oninput = function() {
+  afterImage.style.width = this.value + '%';
+};
